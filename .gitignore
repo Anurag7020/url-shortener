@@ -11,7 +11,7 @@ backend/url_shortener/venv/
 # Ignore IDE-specific files
 .idea/
 .vscode/
-
+/backend/.idea/
 # Ignore system-specific files
 .DS_Store
 Thumbs.db
