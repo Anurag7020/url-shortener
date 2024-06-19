@@ -13,6 +13,6 @@ class ShortenedURL(models.Model):
 
 class URLHit(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    short_code = models.CharField(max_length=100,null=False)
     timestamp = models.DateTimeField(auto_now_add=True)
-    ip_address = models.GenericIPAddressField()
-    user_agent = models.CharField(max_length=255)
+    ip_address = models.GenericIPAddressField(null=True,default=None)

@@ -11,4 +11,5 @@ class ShortenedURLSerializer(serializers.ModelSerializer):
 class URLHitSerializer(serializers.ModelSerializer):
     class Meta:
         model = URLHit
-        fields = ['id', 'url', 'timestamp', 'ip_address', 'user_agent']
+        fields = ['id', 'short_code', 'timestamp', 'ip_address']
+
